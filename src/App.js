@@ -40,17 +40,17 @@ function App() {
  
         <div>
           <label>Weight (lbs)</label>
-          <input value={weight} onChange={(e) => setWeight(e.target.value)} />
+          <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} />
         </div>
  
         <div>
           <label>Height (in)</label>
-          <input value={height} onChange={(e) => setHeight(e.target.value)} />
+          <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
         </div>
  
         <div>
           <button className='btn' type='submit'>Submit</button>
-          <button className='btn btn-outline' onClick={reload} type='submit'>Reload</button>
+          <button className='btn' onClick={reload} type='submit'>Reload</button>
         </div>
       </form>
  
